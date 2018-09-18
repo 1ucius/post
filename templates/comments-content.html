@@ -1,0 +1,39 @@
+
+<h2 class="stag-medium large-font">Leave comment:</h2>
+<div class="border border_narrow" id="comment-form">
+  <div class="avatar border border_narrow rounded"><img class="block rounded" src="" alt="avatar" id="user-avatar"/></div>
+  <form class="comment-form">
+    <textarea class="comment-form__input stag-book medium-font border border_narrow rounded" rows="4" placeholder="Your  Message"></textarea>
+    <div class="comment-form__error stag-medium small-font"></div>
+    <div class="comment-form__success stag-medium small-font"></div>
+    <button class="comment-form__button stag-medium medium-font border border_narrow rounded" type="submit">Send</button>
+  </form>
+</div>
+<div class="border border_narrow" id="comments"></div>
+<div class="load-more-wrapper">
+  <button class="border border_narrow stag-book small-font" id="load-more">load more comments</button>
+</div>
+<div id="form-container">
+  <div class="respond-form" id="respond-form">
+    <div class="respond-form__navigation stag-book small-font clearfix flex">
+      <ul class="info info_comment respond-form__addressee">
+        <li class="info__item info__item_author">
+          <div class="info__icon"><img src="./img/addressee.png" alt="image"/></div>
+          <p class="info__author-name" id="addressee"></p>
+        </li>
+      </ul>
+      <button class="respond-form__button stag-book small-font" id="close">Cancel</button>
+    </div>
+    <form class="comment-form">
+      <textarea class="comment-form__input stag-book medium-font border border_narrow rounded" rows="4" placeholder="Your  Message"></textarea>
+      <div class="comment-form__error stag-medium small-font"></div>
+      <div class="comment-form__success stag-medium small-font"></div>
+      <button class="comment-form__button stag-medium medium-font border border_narrow rounded" type="submit">Send</button>
+    </form>
+  </div>
+  <div class="stag-medium" id="delete-overlay">
+    <p class="small-font">Are you sure you want to delete this message?</p>
+    <button class="border border_narrow small-font" id="accept">Yes</button>
+    <button class="border border_narrow small-font" id="abort">No</button>
+  </div>
+</div>
