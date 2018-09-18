@@ -1,0 +1,14 @@
+h2.stag-medium.large-font Leave comment:
+#comment-form.border.border_narrow
+    .avatar.border.border_narrow.rounded
+        img(src="", alt="avatar")#user-avatar.block.rounded
+    include comment-form.pug
+#comments.border.border_narrow
+.load-more-wrapper
+    button#load-more.border.border_narrow.stag-book.small-font load more comments
+#form-container
+    include respond-form.pug
+    #delete-overlay.stag-medium
+        p.small-font Are you sure you want to delete this message?
+        button#accept.border.border_narrow.small-font Yes
+        button#abort.border.border_narrow.small-font No

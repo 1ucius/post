@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Stag-Medium';
+    src: url(../fonts/StagMedium.otf);
+}
+
+@font-face {
+    font-family: 'Stag-Semibold';
+    src: url(../fonts/StagSemibold.otf);
+}
+
+@font-face {
+    font-family: 'Stag-Book';
+    src: url(../fonts/StagBook.otf);
+}
+
+@font-face {
+    font-family: 'Stag-Book-Italic';
+    src: url(../fonts/StagBookItalic.otf);
+}
+
+.stag-medium {
+    font-family: Stag-Medium, sans-serif;
+}
+
+.stag-semibold {
+    font-family: Stag-Semibold, sans-serif;
+}
+
+.stag-book {
+    font-family: Stag-Book, sans-serif;
+}
+
+.stag-book-i {
+    font-family: Stag-Book-Italic, sans-serif;
+}

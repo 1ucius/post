@@ -1,0 +1,46 @@
+@supports (display: flex) {
+
+    .flex {
+        display: flex;
+        float: none;
+
+        & * {
+            float: none;
+        }
+
+            &.clearfix:after {
+            display: none;
+            }
+
+    }
+
+
+    @media screen and (max-width: 800px) {
+
+        .post__paragraph.post__paragraph_with-image {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+    
+            p {
+                max-width: 100%;
+                width: 100%;
+            }
+    
+        }
+
+    }
+
+    .respond-form__navigation {
+        justify-content: space-between;
+    }
+
+    #delete-overlay {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}

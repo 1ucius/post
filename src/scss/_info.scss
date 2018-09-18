@@ -1,0 +1,41 @@
+.info {
+    border-right-width: 0;
+    border-left-width: 0;
+    color: $light-text;
+    border-color: $border-color;
+
+    &__item {
+        display: inline-block;
+        white-space: nowrap;
+
+        & * {
+            display: inline-block;
+        }
+
+    }
+
+    &_top {
+        border-bottom-width: 0;
+    }
+    
+    &_comment {
+        margin: 0;
+
+        .info__author-name {
+            color: $dark-text;
+        }
+
+    }
+
+
+    &__icon {
+        position: relative;
+
+        img {
+            height: 100%;
+            width: auto;
+        }
+
+    }
+
+}

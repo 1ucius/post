@@ -1,0 +1,98 @@
+.post {
+
+    &__wrapper {
+        position: relative;
+        z-index: 1;
+        max-width: 1400px;
+        margin: 0 auto;
+        background-color: #fff;
+        box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05);
+    }
+
+    &__title {
+        position: relative;
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            background-image: url(../img/star.png);
+            background-image: url(../img/star.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+    }
+
+    &__paragraph {
+        display: block;
+        width: 100%;
+        text-align: justify;
+    }
+
+    &__content-image {
+        position: relative;
+        border-color: $border-color;
+        cursor: pointer;
+
+        &_left {
+            float: left;
+            border-left-width: 0;
+        }
+
+        &:hover .post__image-overlay {
+            opacity: 1;
+        }
+
+    }
+
+    &__image-overlay {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background-color: #000;
+        background-color: rgba(0, 0, 0, 0.502);
+        transition: opacity .3s ease;
+
+        &-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 2.74%;
+        }
+
+        &-eye {
+            position: absolute;
+            width: 17.582%;
+            top: 0;
+            bottom: 0;
+            left: 41.209%;
+            height: 100%;
+            background-position: 50% 50%;
+            background-size: 100% auto;
+            background-image: url(../img/eye.png);
+            background-image: url(../img/eye.svg);
+            background-repeat: no-repeat;
+        }
+
+        &-text {
+            display: block;
+            color: #fff;
+            font-size: .8125rem;
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            left: 0;
+            bottom: 8%;
+            white-space: normal;
+        }
+
+    }
+
+}
+  

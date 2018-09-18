@@ -1,0 +1,212 @@
+.comments-section {
+    margin-top: 2rem;
+
+    h2 {
+        color: $dark-text;
+    }
+
+}
+
+#comment-form {
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    position: relative;
+    border-color: $border-color;
+}
+
+.comment-form {
+    position: relative;
+    text-align: right;
+
+    &__input {
+        resize: none;
+        display: block;
+        width: 100%;
+        border-color: $border-color;
+        color: $dark-text;
+
+        &::placeholder {
+            color: #d9d9d9;
+        }
+
+    }
+
+    &__button {
+        display: inline-block;
+        border-color: $main-orange;
+        background-color: $main-orange;
+        color: $dark-text;
+        transition: background-color .3s ease,
+                    color .3s ease;
+
+        &:hover {
+            background-color: transparent;
+            color: $main-orange;
+        }
+
+    }
+
+    &__error,
+    &__success {
+        display: none;
+        width: 100%;
+        margin-top: .625rem;
+        text-align: left;
+
+        &_active {
+            display: block;
+        }
+
+    }
+
+    &__error {
+        color: $error-color;
+    }
+
+    &__success {
+        color: $accept-green;
+    }
+
+}
+
+.respond-form {
+
+    &__navigation {
+        
+        * {
+            display: inline-block;
+            line-height: 1.5;
+        }
+
+    }
+
+    &__addressee {
+        float: left;
+
+        .info__item_author .info__author-name {
+            color: $light-text;
+        }
+        
+    }
+
+    &__button {
+        float: right;
+        position: relative;
+        color: $light-text;
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 100%;
+            background-size: 100% auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url(../img/delete.png);
+        }
+    }
+
+}
+
+.avatar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-color: $border-color;
+}
+
+#comments {
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-color: $border-color;
+}
+
+.comment {
+    position: relative;
+
+    &__wrapper {
+        width: 100%;
+        position: relative;
+    }
+
+    &__navigation {
+        white-space: nowrap;
+        text-align: left;
+
+        button {
+            color: $light-text;
+        }
+        
+    }
+
+    &__nav-button {
+        float: left;
+        background: transparent;
+        position: relative;
+        transition: color .3s ease;
+
+        &_edit:before {
+            background-image: url(../img/edit.png);
+        }
+
+        &_delete:before {
+            background-image: url(../img/delete.png);
+        }
+
+        &_reply:before {
+            background-image: url(../img/reply.png);
+        }
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 100%;
+            background-size: 100% auto;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        &:hover {
+            color: $dark-text;
+        }
+
+
+
+    }
+
+}
+
+
+.load-more-wrapper {
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+#load-more {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-color: $border-color;
+    color: $light-text;
+    transition: background-color .3s ease,
+                color .3s ease;
+
+    &:hover {
+        background-color: $main-orange;
+        color: $dark-text;
+    }
+
+    &:disabled {
+        color: $dark-text;
+    }
+
+    &:disabled:hover {
+         background-color: transparent;
+         color: $dark-text;
+    }
+
+}
