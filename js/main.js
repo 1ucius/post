@@ -196,7 +196,7 @@ jQuery(document).ready(function ($) {
 
 
         makeAjax('GET', '', false, {count: 5, offset: commentsOffset}, 'startSetup', false);
-        makeAjax('GET', '', false, {offset: 0}, 'countComments', false);
+        makeAjax('GET', '', false, {offset: 0, count: 0}, 'countComments', false);
 
         function form(el) {
 
