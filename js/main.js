@@ -9,7 +9,7 @@ jQuery(document).ready(function ($) {
             commentsCount   = 0,
             commentsOffset  = 0,
             userImage       = document.getElementById('user-avatar'),
-            baseURL         ='https://cors-anywhere.herokuapp.com/http://frontend-test.pingbull.com/pages/vadim.orlov.workmail@gmail.com/comments',
+            baseURL         ='http://frontend-test.pingbull.com/pages/vadim.orlov.workmail@gmail.com/comments',
             user;
 
 
@@ -95,7 +95,7 @@ jQuery(document).ready(function ($) {
                 html.innerHTML = 
                
                     '<div class="avatar border border_narrow rounded' + (reply ? ' avatar_small' : '') + '">' +
-                        '<img class="block rounded" src="' + data.author.avatar + '"> ' +
+                        '<img class="block rounded" src="' + data.author.avatar + '" alt="avatar"> ' +
                     '</div> ' +
                     '<div class="comment__wrapper">' +
                         '<ul class="info info_comment">' +
@@ -196,7 +196,7 @@ jQuery(document).ready(function ($) {
 
 
         makeAjax('GET', '', false, {count: 5, offset: commentsOffset}, 'startSetup', false);
-        makeAjax('GET', '', false, {offset: 0, count: 0}, 'countComments', false);
+        makeAjax('GET', '', false, {offset: 0, count: 1000}, 'countComments', false);
 
         function form(el) {
 
