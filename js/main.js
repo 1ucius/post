@@ -9,7 +9,7 @@ jQuery(document).ready(function ($) {
             commentsCount   = 0,
             commentsOffset  = 0,
             userImage       = document.getElementById('user-avatar'),
-            baseURL         ='http://frontend-test.pingbull.com/pages/vadim.orlov.workmail@gmail.com/comments',
+            baseURL         ='https://cors-anywhere.herokuapp.com/http://frontend-test.pingbull.com/pages/vadim.orlov.workmail@gmail.com/comments',
             user;
 
 
